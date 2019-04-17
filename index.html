@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>音乐播放器</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="lib/jquery-3.3.1.js"></script>
+</head>
+<body>
+<div class="version_heart">
+    <!--头部菜单-->
+    <div class="top">
+        <span class="left">音乐播放器</span>
+        <p class="right">By - Mr:Liu</p>
+    </div>
+    <!--搜索文本框-->
+    <div class="input">
+        <input class="text_input" type="text"/>
+    </div>
+    <!--搜索结果-->
+    <div class="result">
+        <ul class="result_li">
+        </ul>
+    </div>
+
+    <audio preload="auto"></audio>
+    <!--底部控制-->
+    <div class="bottom">
+        <!--左侧播放控制-->
+        <div class="bottom_left">
+            <!--上一曲-->
+            <span class="left bottom_left_on"></span>
+            <!--暂停播放-->
+            <span class="left bottom_left_play"></span>
+            <!--下一曲-->
+            <span class="left bottom_left_under"></span>
+        </div>
+        <!--中间进度条-->
+        <div class="bottom_middle">
+            <img class="play_img" src="" alt=""/>
+            <div class="play">
+                <span class="by_txt"><span>歌曲</span> -- <span>歌手</span></span>
+                <div class="left progress">
+                    <div class="in"></div>
+                    <span class="left circle"></span>
+                </div>
+                <span class="right time">
+                    <span class="time_non">00:00</span>
+                    /
+                    <span class="time_max">00:00</span>
+                </span>
+            </div>
+        </div>
+        <!--右侧播放列表-->
+        <div class="left bottom_right">
+            <span class="left volume"></span>
+            <span class="left order"></span>
+            <div id="playlist_list" class="playlist">
+                <div class="h4">
+                    <h4 class="left playlist_top">播放列表</h4><span class="right playlist_delect">清除</span>
+                </div>
+                <ul>
+                </ul>
+            </div>
+            <span id="playlist" class="left list"></span>
+            <span class="playlist_length"></span>
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/index.js"></script>
+</html>

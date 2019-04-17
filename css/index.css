@@ -1,0 +1,377 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background: url("../img/背景.jpg");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.version_heart {
+    margin: 0 auto;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+/*头部菜单 开始*/
+.version_heart .top {
+    width: 100%;
+    height: 50px;
+    background-color: #3b3b3b;
+    color: #e8e8e8;
+    line-height: 50px;
+    opacity: 0.8;
+}
+
+.version_heart .top:hover {
+    color: #ffffff;
+}
+
+.version_heart .top span {
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.version_heart .top p {
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+/*头部菜单结束 */
+
+/*搜索框开始*/
+.version_heart .input {
+    width: 400px;
+    height: 40px;
+    margin: 20px auto;
+}
+
+.version_heart .text_input {
+    background-color: #3a3636;
+}
+
+.version_heart .input input {
+    color: #cecece;
+    width: 400px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid #82fff5;
+    display: flex;
+    outline: none;
+    font-size: 15px;
+    text-indent: 15px;
+    opacity: 0.8;
+}
+
+.version_heart .input .text_input:focus {
+    border-color: #00dfe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(0, 225, 233, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(0, 245, 255, 0.6)
+}
+
+/*搜索框结束*/
+
+/*搜索结果显示部分*/
+.version_heart .result {
+    width: 700px;
+    height: 400px;
+    background-color: #2e4043;
+    border-radius: 10px;
+    margin: 80px 0 0 150px;
+    padding-top: 20px;
+    box-sizing: border-box;
+    opacity: 0.8;
+    color: #dedede;
+    box-shadow: 0 0 200px #2e4043;
+    overflow-y:auto;
+}
+/*
+
+.version_heart .result::-webkit-scrollbar-track
+ {
+     -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.3);
+     border-radius: 5px;
+     background-color: rgba(255,255,255,0.8);
+ }
+.version_heart .result::-webkit-scrollbar
+{
+    width: 5px;
+    background-color: rgba(0,0,0,0);
+}
+.version_heart .result::-webkit-scrollbar-thumb
+{
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,.3);
+    background-color: #555;
+}
+*/
+
+.version_heart .result li {
+    height: 30px;
+    width: 90%;
+    margin: 0 auto;
+    border-bottom: 1px dashed #dedede;
+    line-height: 30px;
+    color: #fff;
+}
+
+.version_heart .result li:hover {
+    transform: rotateY(10deg) translateX(-10px);
+    /*box-shadow: 3px 3px 5px #dedaeb;*/
+    background: #557174;
+    color: #00fff0;
+    opacity: 0.9;
+}
+
+/*搜索结果显示结束*/
+/*底部控制菜单开始*/
+.version_heart .bottom {
+    height: 50px;
+    width: 100%;
+    background: url("../img/1.png");
+    position: fixed;
+    bottom: 0;
+    opacity: 0.9;
+}
+
+/*底部控制菜单左侧播放开始*/
+.version_heart .bottom .bottom_left {
+    position: absolute;
+    margin: 7px auto;
+    padding-left: 50px;
+    line-height: 50px;
+    width: 215px;
+}
+
+.version_heart .bottom .bottom_left .bottom_left_on {
+    display: block;
+    width: 30px;
+    height: 35px;
+    background: url("../img/1.png") no-repeat 0px -122px;
+    z-index: 99;
+}
+.version_heart .bottom .bottom_left .bottom_left_on:hover{
+    background: url("../img/1.png") no-repeat -30px -122px;
+}
+
+.version_heart .bottom .bottom_left .bottom_left_play {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url("../img/1.png") 0px 415px;
+    z-index: 99;
+    margin: 0 10px;
+}
+.version_heart .bottom .bottom_left .bottom_left_play:hover{
+    background: url("../img/1.png") -40px 415px;
+}
+
+.version_heart .bottom .bottom_left .bottom_left_under {
+    display: block;
+    width: 30px;
+    height: 35px;
+    left: -10px;
+    background: url("../img/1.png") no-repeat -79px -122px;
+}
+.version_heart .bottom .bottom_left .bottom_left_under:hover{
+    background: url("../img/1.png") no-repeat -109px -122px;
+}
+
+/*底部控制菜单左侧播放结束*/
+/*底部控制菜单中间进度条开始*/
+.version_heart .bottom .bottom_middle img {
+    float: left;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin: 10px auto 10px 10px;
+    z-index: 99;
+}
+
+.version_heart .bottom .bottom_middle {
+    margin-left: 5%;
+    width: 520px;
+    height: 50px;
+    position: absolute;
+    left: 180px;
+}
+
+.version_heart .bottom .play {
+    width: 730px;
+    height: 50px;
+}
+
+.version_heart .bottom .play .by_txt {
+    margin-top: 5px;
+    margin-left: 80px;
+    width: 300px;
+    display: block;
+    font-size: 12px;
+    line-height: 28px;
+    color: #dedede;
+}
+
+.version_heart .bottom .bottom_middle .progress {
+    z-index: 99;
+    width: 400px;
+    height: 10px;
+    background-color: #1b1b1b;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+.version_heart .bottom .bottom_middle .progress .in {
+    z-index: 99;
+    width: 0px;
+    height: 10px;
+    background-color: #ff0017;
+    border-radius: 10px;
+}
+
+.version_heart .bottom .bottom_middle .progress .circle {
+    display: block;
+    width: 15px;
+    height: 15px;
+    padding: 0;
+    margin: -12px 0 -7px;
+    background-color: #dedede;
+    border-radius: 50%;
+}
+
+.version_heart .bottom .bottom_middle .time {
+    color: #dedede;
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 20px;
+    line-height: 20px;
+    right: -85px;
+    top: 25px;
+}
+
+/*底部控制菜单中间进度条结束*/
+/*底部循环菜单*/
+.version_heart .bottom .bottom_right {
+    position: absolute;
+    width: 300px;
+    height: 50px;
+    right: 0;
+    margin: 18px auto 18px 3%;
+}
+
+.version_heart .bottom .bottom_right > .volume {
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: url("../img/1.png") 0px 2220px;
+}
+.version_heart .bottom .bottom_right > .volume:hover{
+    background: url("../img/1.png") -29px 2220px;
+}
+.version_heart .bottom .bottom_right .order {
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: url("../img/1.png") 0px 276px;
+    margin: 0 10px;
+}
+.version_heart .bottom .bottom_right .order:hover{
+    background: url("../img/1.png") -30px 276px;
+}
+
+.version_heart .bottom .bottom_right .list {
+    display: block;
+    width: 60px;
+    height: 25px;
+    background: url("../img/1.png") -45px 1165px;
+}
+.version_heart .bottom .bottom_right .list:hover{
+    background: url("../img/1.png") -45px 1135px;
+}
+
+/*播放列表*/
+.version_heart .bottom .bottom_right .playlist {
+    width: 700px;
+    height: 350px;
+    position: fixed;
+    background-color: #1c1c1c;
+    bottom: 50px;
+    right: 10%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    opacity: 0.9;
+    color: #f5f5f5;
+    display: none;
+    overflow-y:auto;
+}
+
+.version_heart .bottom .bottom_right .playlist .h4 {
+    box-sizing: border-box;
+    height: 30px;
+    width: 100%;
+    margin: 0;
+    background-color: #000000;
+    line-height: 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 0 10px;
+}
+.version_heart .bottom .bottom_right .playlist ul{
+    padding: 0 10px;
+}
+.version_heart .bottom .bottom_right .playlist li {
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+    float: left;
+}
+.version_heart .bottom .bottom_right .playlist .li_span{
+    display: block;
+    width: 30%;
+    height: 25px;
+}
+.version_heart .bottom .bottom_right .playlist .li_span_name{
+    display: block;
+    width: 60%;
+    height: 25px;
+}
+.version_heart .bottom .bottom_right .playlist a{
+    display: block;
+    height: 30px;
+    width: 60px;
+    right: 100px;
+    color: #5effd4;
+}
+.version_heart .bottom .bottom_right .playlist li:hover{
+    background: #00cbd4;
+    opacity: 0.9;
+}
+.playlist_length{
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    /*top: -10px;*/
+    line-height: 30px;
+    top: -1px;
+    left: 95px;
+    font-size: 12px;
+    color: #eaeaea;
+}
+
+/*播放列表结束*/
+/*底部控制菜单结束*/
